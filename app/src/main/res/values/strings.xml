@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Music Cloud Player</string>
+    <string name="album_name">Lenin\'s package 2006</string>
+    <string name="start_time">0.00</string>
+    <string name="end_time">7.26</string>
+    <string name="song_name">Utopian socialism</string>
+    <string name="author_name">City of Sun</string>
+    <string name="presets_txt">Presets</string>
+    <string name="equalizer_on_off_txt">Equalizer on/off</string>
+    <string name="song_length_play_list">3:57</string>
+    <string name="song_name_play_list">Author name - Song name...</string>
+    <string name="song_timing_txt">1.55</string>
+    <string name="popup_menu">Popup menu</string>
+    <string name="ring_tone_selected">"New ringtone selected"</string>
+    <string name="shared_song">"Song was shared"</string>
+    <string name="rescan_folders">"Clouds and folders rescaned"</string>
+
+
+</resources>
