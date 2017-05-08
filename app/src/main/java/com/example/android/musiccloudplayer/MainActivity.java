@@ -37,40 +37,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.imageButtonMenu:
                 toastMaker(getString(R.string.popup_menu));
                 animationOfButtonsWhenActivityStart(Techniques.Shake);
-
+                Intent intent6 = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(intent6);
                 break;
             case R.id.imageButtonOnRingtone:
                 toastMaker(getString(R.string.ring_tone_selected));
                 animationOfButtonsWhenActivityStart(Techniques.Shake);
+                Intent intent5 = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(intent5);
                 break;
             case R.id.imageButtonShare:
                 toastMaker(getString(R.string.shared_song));
-                animationOfButtonsWhenActivityStart(Techniques.Shake);
+                Intent intent4 = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(intent4);
                 break;
             case R.id.imageButtonClouds:
                 Intent intent = new Intent(MainActivity.this, CloudSelector.class);
-
-
                 startActivity(intent);
                 break;
             case R.id.imageButtonPlayer:
                 Intent intent1 = new Intent(MainActivity.this, MainActivity.class);
-
                 startActivity(intent1);
                 break;
             case R.id.imageButtonPlayList:
                 Intent intent2 = new Intent(MainActivity.this, PlayList.class);
-
                 startActivity(intent2);
                 break;
             case R.id.imageButtonEqualizer:
-
                 Intent intent3 = new Intent(MainActivity.this, Equalizer.class);
                 startActivity(intent3);
                 break;
             case R.id.imageButtonRescan:
                 toastMaker(getString(R.string.rescan_folders));
-                animationOfButtonsWhenActivityStart(Techniques.Shake);
+                Intent intent7 = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(intent7);
                 break;
 
         }
