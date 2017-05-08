@@ -49,13 +49,14 @@
 
     </LinearLayout>
 
+    <!--Folders selected area-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="7"
         android:background="@drawable/w6"
         android:orientation="vertical">
-
+        <!--Scrollview for folders area-->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -64,18 +65,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+                <!--Clouds line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Logo of cloud-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/googledrive" />
-
+                    <!--Cloud name txt-->
                     <TextView
 
 
@@ -87,20 +90,21 @@
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
 
+                    <!--clear field-->
                     <ImageView
 
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--clear field-->
                     <ImageView
 
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Checkbox-->
                     <CheckBox
                         android:buttonTint="@android:color/background_light"
                         android:layout_width="0dp"
@@ -108,7 +112,7 @@
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:checked="true" />
-
+                    <!--3dot menu -->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -118,18 +122,18 @@
 
 
                 </LinearLayout>
-
+                <!--Folders line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Folders icon-->
                     <ImageView
 
                         android:layout_width="0dp"
@@ -137,9 +141,63 @@
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/ic_folder_white_24dp" />
-
+                    <!--Folders names-->
                     <TextView
 
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="PHOTOS"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Clear field-->
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp" />
+                    <!--Checkbox for folders-->
+                    <CheckBox
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:buttonTint="@android:color/background_light"
+                        android:checked="true" />
+                    <!--Folders 3 dot menu-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
+
+
+                </LinearLayout>
+                <!--Folders line-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+                    <!--Clear field-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp" />
+                    <!--Folders icon-->
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_folder_white_24dp" />
+                    <!--Folders names-->
+                    <TextView
 
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
@@ -148,14 +206,14 @@
                         android:text="MUSIC"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                    <!--Clear field-->
                     <ImageView
 
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Checkbox for folders-->
                     <CheckBox
 
                         android:layout_width="0dp"
@@ -164,7 +222,7 @@
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--Folders 3 dot menu-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -174,18 +232,18 @@
 
 
                 </LinearLayout>
-
+                <!--Folders line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Folders icon-->
                     <ImageView
 
                         android:layout_width="0dp"
@@ -193,65 +251,8 @@
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/ic_folder_white_24dp" />
-
+                    <!--Folders names-->
                     <TextView
-
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="PHOTO"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <CheckBox
-
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:buttonTint="@android:color/background_light"
-                        android:checked="false" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_folder_white_24dp" />
-
-                    <TextView
-
 
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
@@ -260,14 +261,14 @@
                         android:text="RINGTONES"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                    <!--Clear field-->
                     <ImageView
 
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Checkbox for folders-->
                     <CheckBox
 
                         android:layout_width="0dp"
@@ -276,7 +277,7 @@
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--Folders 3 dot menu-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -286,37 +287,32 @@
 
 
                 </LinearLayout>
-
+                    <!--Files line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Clear field-->
                     <ImageView
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Files icon-->
                     <ImageView
-
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
+                    <!--File name - song name-->
                     <TextView
-
-
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -324,16 +320,15 @@
                         android:text="Author-song name"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                        <!--CheckBox for files-->
                     <CheckBox
-
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--#dot menu for files-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -343,36 +338,32 @@
 
 
                 </LinearLayout>
+                <!--Files line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Clear field-->
                     <ImageView
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Files icon-->
                     <ImageView
-
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
+                    <!--File name - song name-->
                     <TextView
-
-
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -380,16 +371,15 @@
                         android:text="Author-song name"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                    <!--CheckBox for files-->
                     <CheckBox
-
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--#dot menu for files-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -399,36 +389,32 @@
 
 
                 </LinearLayout>
+                <!--Files line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Clear field-->
                     <ImageView
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Files icon-->
                     <ImageView
-
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
+                    <!--File name - song name-->
                     <TextView
-
-
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -436,16 +422,15 @@
                         android:text="Author-song name"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                    <!--CheckBox for files-->
                     <CheckBox
-
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--#dot menu for files-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -455,36 +440,32 @@
 
 
                 </LinearLayout>
+                <!--Files line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Clear field-->
                     <ImageView
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Files icon-->
                     <ImageView
-
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.95"
+                        android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
+                    <!--File name - song name-->
                     <TextView
-
-
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -492,16 +473,15 @@
                         android:text="Author-song name"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                    <!--CheckBox for files-->
                     <CheckBox
-
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--#dot menu for files-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -511,19 +491,19 @@
 
 
                 </LinearLayout>
+                <!--Clouds line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Logo of cloud-->
                     <ImageView
-                        android:id="@+id/imageView2"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/dropbox" />
-
+                    <!--Cloud name txt-->
                     <TextView
 
 
@@ -531,33 +511,33 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="6"
-                        android:text="Drop box"
+                        android:text="Google drive"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
 
+                    <!--clear field-->
                     <ImageView
 
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--clear field-->
                     <ImageView
 
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Checkbox-->
                     <CheckBox
-
+                        android:buttonTint="@android:color/background_light"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--3dot menu -->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -567,18 +547,18 @@
 
 
                 </LinearLayout>
-
+                <!--Folders line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Folders icon-->
                     <ImageView
 
                         android:layout_width="0dp"
@@ -586,9 +566,8 @@
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/ic_folder_white_24dp" />
-
+                    <!--Folders names-->
                     <TextView
-
 
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
@@ -597,14 +576,14 @@
                         android:text="MUSIC"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                    <!--Clear field-->
                     <ImageView
 
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Checkbox for folders-->
                     <CheckBox
 
                         android:layout_width="0dp"
@@ -613,7 +592,7 @@
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--Folders 3 dot menu-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -623,109 +602,48 @@
 
 
                 </LinearLayout>
-
+                <!--Files line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Clear field-->
                     <ImageView
-
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp" />
+                    <!--Files icon-->
+                    <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
-                        app:srcCompat="@drawable/ic_folder_white_24dp" />
-
+                        app:srcCompat="@drawable/ic_music_note_white_24dp" />
+                    <!--File name - song name-->
                     <TextView
-
-
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="6"
-                        android:text="PHOTO"
+                        android:text="Author-song name"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
+                    <!--CheckBox for files-->
                     <CheckBox
-
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:buttonTint="@android:color/background_light"
-                        android:checked="false" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_folder_white_24dp" />
-
-                    <TextView
-
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="RINGTONES"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <CheckBox
-
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--#dot menu for files-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -735,37 +653,32 @@
 
 
                 </LinearLayout>
-
+                <!--Files line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Clear field-->
                     <ImageView
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Files icon-->
                     <ImageView
-
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
+                    <!--File name - song name-->
                     <TextView
-
-
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -773,16 +686,15 @@
                         android:text="Author-song name"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                    <!--CheckBox for files-->
                     <CheckBox
-
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--#dot menu for files-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -792,186 +704,22 @@
 
 
                 </LinearLayout>
+                <!--Files line-->
+                <!--Files line-->
+                <!--Files line-->
+                <!--Clouds line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
-                    <TextView
-
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="Author-song name"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <CheckBox
-
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:buttonTint="@android:color/background_light"
-                        android:checked="false" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
-                    <TextView
-
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="Author-song name"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <CheckBox
-
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:buttonTint="@android:color/background_light"
-                        android:checked="false" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
-                    <TextView
-
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="Author-song name"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <CheckBox
-
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:buttonTint="@android:color/background_light"
-                        android:checked="true" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
+                    <!--Logo of cloud-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/onedrive" />
-
+                    <!--Cloud name txt-->
                     <TextView
 
 
@@ -979,33 +727,33 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="6"
-                        android:text="One Drive"
+                        android:text="Google drive"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
 
+                    <!--clear field-->
                     <ImageView
 
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--clear field-->
                     <ImageView
 
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Checkbox-->
                     <CheckBox
-
+                        android:buttonTint="@android:color/background_light"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--3dot menu -->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1015,18 +763,18 @@
 
 
                 </LinearLayout>
-
+                <!--Folders line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Folders icon-->
                     <ImageView
 
                         android:layout_width="0dp"
@@ -1034,25 +782,24 @@
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/ic_folder_white_24dp" />
-
+                    <!--Folders names-->
                     <TextView
-
 
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="6"
-                        android:text="MUSIC"
+                        android:text="BEST_HITS"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                    <!--Clear field-->
                     <ImageView
 
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Checkbox for folders-->
                     <CheckBox
 
                         android:layout_width="0dp"
@@ -1061,7 +808,7 @@
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--Folders 3 dot menu-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1071,149 +818,32 @@
 
 
                 </LinearLayout>
-
+                <!--Files line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_folder_white_24dp" />
-
-                    <TextView
-
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="PHOTO"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <CheckBox
-
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:buttonTint="@android:color/background_light"
-                        android:checked="false" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Files icon-->
                     <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_folder_white_24dp" />
-
-                    <TextView
-
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="RINGTONES"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <CheckBox
-
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:buttonTint="@android:color/background_light"
-                        android:checked="true" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
+                    <!--File name - song name-->
                     <TextView
-
-
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1221,16 +851,15 @@
                         android:text="Author-song name"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                    <!--CheckBox for files-->
                     <CheckBox
-
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--#dot menu for files-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1240,186 +869,19 @@
 
 
                 </LinearLayout>
+                <!--Clouds line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
-                    <TextView
-
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="Author-song name"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <CheckBox
-
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:buttonTint="@android:color/background_light"
-                        android:checked="true" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
-                    <TextView
-
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="Author-song name"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <CheckBox
-
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:buttonTint="@android:color/background_light"
-                        android:checked="true" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
-                    <TextView
-
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="Author-song name"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <CheckBox
-
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:buttonTint="@android:color/background_light"
-                        android:checked="true" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
+                    <!--Logo of cloud-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/sugasync" />
-
+                    <!--Cloud name txt-->
                     <TextView
 
 
@@ -1427,33 +889,33 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="6"
-                        android:text="SugarSync"
+                        android:text="Google drive"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
 
+                    <!--clear field-->
                     <ImageView
 
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--clear field-->
                     <ImageView
 
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Checkbox-->
                     <CheckBox
-
+                        android:buttonTint="@android:color/background_light"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--3dot menu -->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1463,18 +925,18 @@
 
 
                 </LinearLayout>
-
+                <!--Folders line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Folders icon-->
                     <ImageView
 
                         android:layout_width="0dp"
@@ -1482,25 +944,24 @@
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/ic_folder_white_24dp" />
-
+                    <!--Folders names-->
                     <TextView
-
 
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="6"
-                        android:text="MUSIC"
+                        android:text="BEST MUSIC"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                    <!--Clear field-->
                     <ImageView
 
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Checkbox for folders-->
                     <CheckBox
 
                         android:layout_width="0dp"
@@ -1509,7 +970,7 @@
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--Folders 3 dot menu-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1519,149 +980,32 @@
 
 
                 </LinearLayout>
-
+                <!--Files line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_folder_white_24dp" />
-
-                    <TextView
-
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="PHOTO"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <CheckBox
-
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:buttonTint="@android:color/background_light"
-                        android:checked="true" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Files icon-->
                     <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_folder_white_24dp" />
-
-                    <TextView
-
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="RINGTONES"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <CheckBox
-
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:buttonTint="@android:color/background_light"
-                        android:checked="true" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp" />
-
-                    <ImageView
-
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
+                    <!--File name - song name-->
                     <TextView
-
-
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1669,16 +1013,15 @@
                         android:text="Author-song name"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                    <!--CheckBox for files-->
                     <CheckBox
-
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--#dot menu for files-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1688,36 +1031,32 @@
 
 
                 </LinearLayout>
+                <!--Files line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Clear field-->
                     <ImageView
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Files icon-->
                     <ImageView
-
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
+                    <!--File name - song name-->
                     <TextView
-
-
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1725,16 +1064,15 @@
                         android:text="Author-song name"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                    <!--CheckBox for files-->
                     <CheckBox
-
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--#dot menu for files-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1744,36 +1082,32 @@
 
 
                 </LinearLayout>
+                <!--Files line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Clear field-->
                     <ImageView
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Files icon-->
                     <ImageView
-
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
+                    <!--File name - song name-->
                     <TextView
-
-
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1781,16 +1115,15 @@
                         android:text="Author-song name"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                    <!--CheckBox for files-->
                     <CheckBox
-
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
-
+                    <!--#dot menu for files-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1800,36 +1133,32 @@
 
 
                 </LinearLayout>
+                <!--Files line-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
-
+                    <!--Clear field-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Clear field-->
                     <ImageView
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp" />
-
+                    <!--Files icon-->
                     <ImageView
-
-
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
                         app:srcCompat="@drawable/ic_music_note_white_24dp" />
-
+                    <!--File name - song name-->
                     <TextView
-
-
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1837,16 +1166,117 @@
                         android:text="Author-song name"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                    <!--CheckBox for files-->
                     <CheckBox
-
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:buttonTint="@android:color/background_light"
                         android:checked="true" />
+                    <!--#dot menu for files-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
 
+
+                </LinearLayout>
+                <!--Files line-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+                    <!--Clear field-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp" />
+                    <!--Clear field-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp" />
+                    <!--Files icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_music_note_white_24dp" />
+                    <!--File name - song name-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="Author-song name"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--CheckBox for files-->
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:buttonTint="@android:color/background_light"
+                        android:checked="true" />
+                    <!--#dot menu for files-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
+
+
+                </LinearLayout>
+                <!--Files line-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+                    <!--Clear field-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp" />
+                    <!--Clear field-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp" />
+                    <!--Files icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_music_note_white_24dp" />
+                    <!--File name - song name-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="Author-song name"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--CheckBox for files-->
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:buttonTint="@android:color/background_light"
+                        android:checked="true" />
+                    <!--#dot menu for files-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"

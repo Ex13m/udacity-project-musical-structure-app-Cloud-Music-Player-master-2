@@ -134,7 +134,7 @@ public class PlayList extends AppCompatActivity implements View.OnClickListener{
         btnAnimations(imageButtonEqualizer,techniques1,1000);
         btnAnimations(imageButtonRescan,techniques1,1100);
     }
-//**************************************************************************************************
+//********3******************************************************************************************
 
 }
 

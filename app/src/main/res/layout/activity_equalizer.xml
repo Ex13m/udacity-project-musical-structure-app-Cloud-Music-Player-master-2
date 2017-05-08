@@ -49,6 +49,7 @@
 
     </LinearLayout>
 
+    <!--Equalizer field-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -56,13 +57,14 @@
         android:background="@drawable/w6"
         android:orientation="vertical">
 
+        <!--Presets line-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-
             android:orientation="horizontal">
 
+            <!--Presets txt-->
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="0dp"
@@ -70,10 +72,10 @@
                 android:layout_weight="1"
                 android:gravity="center_vertical|left"
                 android:paddingLeft="14dp"
-               android:text="@string/presets_txt"
+                android:text="@string/presets_txt"
                 android:textColor="@android:color/background_light"
                 android:textSize="@dimen/SongName" />
-
+            <!--Switch key-->
             <Switch
                 android:id="@+id/switch1"
                 android:layout_width="0dp"
@@ -88,6 +90,7 @@
 
         </LinearLayout>
 
+        <!--Equalizer vertical bars-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -95,12 +98,12 @@
             android:orientation="horizontal">
 
 
-            <LinearLayout
+            <!--Equalizer line1-->
+             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:layout_weight="1">
-
                 <!-- This library requires pair of the VerticalSeekBar and VerticalSeekBarWrapper classes -->
                 <!--MANUAL https://android-arsenal.com/details/1/1436-->
                 <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
@@ -115,8 +118,9 @@
                         app:seekBarRotation="CW270" /> <!-- Rotation: CW90 or CW270 -->
                 </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
 
-
             </LinearLayout>
+
+            <!--Equalizer line2-->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -137,6 +141,8 @@
                         app:seekBarRotation="CW270" /> <!-- Rotation: CW90 or CW270 -->
                 </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
             </LinearLayout>
+
+            <!--Equalizer line3-->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -157,6 +163,8 @@
                         app:seekBarRotation="CW270" /> <!-- Rotation: CW90 or CW270 -->
                 </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
             </LinearLayout>
+
+            <!--Equalizer line4-->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -176,6 +184,8 @@
                     app:seekBarRotation="CW270" /> <!-- Rotation: CW90 or CW270 -->
                 </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
             </LinearLayout>
+
+            <!--Equalizer line5-->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -198,12 +208,13 @@
 
         </LinearLayout>
 
+            <!--Presets style field-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
-
+            <!--Presets style txt-->
             <TextView
                 android:id="@+id/textView2"
                 style="@style/SongName"
