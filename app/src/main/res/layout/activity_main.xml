@@ -8,6 +8,7 @@
     tools:context="com.example.android.musiccloudplayer.MainActivity">
 
 
+    <!--Top buttons panel-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -15,7 +16,7 @@
         android:background="@color/buttonsColor"
         android:orientation="horizontal">
 
-
+        <!--Button menu-->
         <ImageButton
             android:id="@+id/imageButtonMenu"
             style="@style/ButtonsTopAndDown"
@@ -23,6 +24,7 @@
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/manemenu" />
 
+        <!--Button ButtonOnRingtone-->
         <ImageButton
             android:id="@+id/imageButtonOnRingtone"
             style="@style/ButtonsTopAndDown"
@@ -30,13 +32,14 @@
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/ic_ring_volume_white_24dp" />
 
+        <!--Button share-->
         <ImageButton
             android:id="@+id/imageButtonShare"
             style="@style/ButtonsTopAndDown"
             android:layout_weight="1"
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/ic_share_white_24dp" />
-
+        <!--Button clouds-->
         <ImageButton
             android:id="@+id/imageButtonClouds"
             style="@style/ButtonsTopAndDown"
@@ -61,6 +64,7 @@
             android:orientation="vertical"
             android:weightSum="1">
 
+            <!--Album picture -->
             <ImageView
                 android:id="@+id/imageViewAlbumLable"
                 android:layout_width="match_parent"
@@ -74,7 +78,6 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-
             android:orientation="vertical">
 
             <LinearLayout
@@ -82,7 +85,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
-
+                <!--Album name-->
                 <TextView
                     android:id="@+id/textAlbumName"
                     android:text="@string/album_name"
@@ -97,31 +100,31 @@
                 android:layout_weight="2"
                 android:orientation="horizontal">
 
-
+                <!--Button repeat-->
                 <ImageButton
                     android:id="@+id/imageButtonRepeat"
                     style="@style/ButtonsPlayer"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_repeat_white_24dp" />
-
+                <!--Button previous-->
                 <ImageButton
                     android:id="@+id/imageButtonPrevious"
                     style="@style/ButtonsPlayer"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_skip_next_white_24dp_right" />
-
+                <!--button play-->
                 <ImageButton
                     android:id="@+id/imageButtonPlay"
                     style="@style/ButtonsPlayer"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_play_circle_filled_white_24dp" />
-
+                <!--Button next-->
                 <ImageButton
                     android:id="@+id/imageButtonNext"
                     style="@style/ButtonsPlayer"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_skip_next_white_24dp_right_left" />
-
+                <!--Button shuffle-->
                 <ImageButton
                     android:id="@+id/imageButtonShuffle"
                     style="@style/ButtonsPlayer"
@@ -134,7 +137,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
-
+                <!--Start time txt-->
                 <TextView
                     android:id="@+id/startTime"
                     android:text="@string/start_time"
@@ -142,14 +145,14 @@
                     android:layout_weight="1"
                     android:textColor="@android:color/background_light"
                     android:textSize="@dimen/StartEndTime" />
-
+                <!--Timeline seekbar-->
                 <SeekBar
                     android:id="@+id/seekBarPlayer"
                     style="@style/CustomProgressBarHorizontal"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="7.96" />
-
+                <!--End time txt-->
                 <TextView
                     android:id="@+id/endTime"
                     android:text="@string/end_time"
@@ -165,7 +168,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1.3"
                 android:orientation="vertical">
-
+                <!--Song name txt-->
                 <TextView
                     android:id="@+id/songName"
                     style="@style/SongName"
@@ -180,7 +183,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_weight="0.7"
                 android:orientation="vertical">
-
+                <!--Author name txt-->
                 <TextView
                     android:id="@+id/authorName"
                     style="@style/AuthorName"
@@ -191,6 +194,7 @@
         </LinearLayout>
     </LinearLayout>
 
+    <!--Bottom buttons panel-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -198,6 +202,7 @@
         android:background="@color/colorAccent"
         android:orientation="horizontal">
 
+        <!--Button player-->
         <ImageButton
             android:id="@+id/imageButtonPlayer"
             style="@style/ButtonsTopAndDown"
@@ -205,14 +210,14 @@
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/ic_play_circle_outline_white_24dp" />
 
-
+        <!--Button play list-->
         <ImageButton
             android:id="@+id/imageButtonPlayList"
             style="@style/ButtonsTopAndDown"
             android:layout_weight="1"
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/ic_playlist_play_white_24dp" />
-
+        <!--Button equalizer-->
         <ImageButton
             android:id="@+id/imageButtonEqualizer"
             style="@style/ButtonsTopAndDown"
@@ -220,7 +225,7 @@
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/equalizer3" />
 
-
+        <!--Button rescan-->
         <ImageButton
             android:id="@+id/imageButtonRescan"
             style="@style/ButtonsTopAndDown"

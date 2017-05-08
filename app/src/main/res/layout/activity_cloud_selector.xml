@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context="com.example.android.musiccloudplayer.CloudSelector">
 
+    <!--Top buttons panel-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -14,7 +15,7 @@
         android:background="@color/buttonsColor"
         android:orientation="horizontal">
 
-
+        <!--Button menu-->
         <ImageButton
             android:id="@+id/imageButtonMenu"
             style="@style/ButtonsTopAndDown"
@@ -22,6 +23,7 @@
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/manemenu" />
 
+        <!--Button ButtonOnRingtone-->
         <ImageButton
             android:id="@+id/imageButtonOnRingtone"
             style="@style/ButtonsTopAndDown"
@@ -29,13 +31,14 @@
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/ic_ring_volume_white_24dp" />
 
+        <!--Button share-->
         <ImageButton
             android:id="@+id/imageButtonShare"
             style="@style/ButtonsTopAndDown"
             android:layout_weight="1"
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/ic_share_white_24dp" />
-
+        <!--Button clouds-->
         <ImageButton
             android:id="@+id/imageButtonClouds"
             style="@style/ButtonsTopAndDown"
@@ -1861,6 +1864,7 @@
 
     </LinearLayout>
 
+    <!--Bottom buttons panel-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -1868,6 +1872,7 @@
         android:background="@color/colorAccent"
         android:orientation="horizontal">
 
+        <!--Button player-->
         <ImageButton
             android:id="@+id/imageButtonPlayer"
             style="@style/ButtonsTopAndDown"
@@ -1875,14 +1880,14 @@
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/ic_play_circle_outline_white_24dp" />
 
-
+        <!--Button play list-->
         <ImageButton
             android:id="@+id/imageButtonPlayList"
             style="@style/ButtonsTopAndDown"
             android:layout_weight="1"
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/ic_playlist_play_white_24dp" />
-
+        <!--Button equalizer-->
         <ImageButton
             android:id="@+id/imageButtonEqualizer"
             style="@style/ButtonsTopAndDown"
@@ -1890,7 +1895,7 @@
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/equalizer3" />
 
-
+        <!--Button rescan-->
         <ImageButton
             android:id="@+id/imageButtonRescan"
             style="@style/ButtonsTopAndDown"

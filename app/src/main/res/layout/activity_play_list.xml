@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context="com.example.android.musiccloudplayer.PlayList">
 
+    <!--Top buttons panel-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -14,7 +15,7 @@
         android:background="@color/buttonsColor"
         android:orientation="horizontal">
 
-
+        <!--Button menu-->
         <ImageButton
             android:id="@+id/imageButtonMenu"
             style="@style/ButtonsTopAndDown"
@@ -22,6 +23,7 @@
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/manemenu" />
 
+        <!--Button ButtonOnRingtone-->
         <ImageButton
             android:id="@+id/imageButtonOnRingtone"
             style="@style/ButtonsTopAndDown"
@@ -29,13 +31,14 @@
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/ic_ring_volume_white_24dp" />
 
+        <!--Button share-->
         <ImageButton
             android:id="@+id/imageButtonShare"
             style="@style/ButtonsTopAndDown"
             android:layout_weight="1"
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/ic_share_white_24dp" />
-
+        <!--Button clouds-->
         <ImageButton
             android:id="@+id/imageButtonClouds"
             style="@style/ButtonsTopAndDown"
@@ -46,13 +49,14 @@
 
     </LinearLayout>
 
+    <!--Work screen-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="7"
         android:background="@drawable/w6"
         android:orientation="vertical">
-
+        <!--scroll panel-->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -62,20 +66,21 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <!--Song line and params -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/PlayListFieldSize"
                     android:orientation="horizontal">
 
+                    <!--Cloud icon-->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:padding="6dp"
-                        app:srcCompat="@drawable/dropbox" />
-
+                        app:srcCompat="@drawable/sugasync" />
+                    <!--Author and song name txt-->
                     <TextView
-                        android:id="@+id/textView6"
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -83,7 +88,7 @@
                         android:text="@string/song_name_play_list"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
-
+                    <!--Songs duration txt-->
                     <TextView
                         style="@style/PlayListTextStyle"
                         android:layout_width="0dp"
@@ -92,7 +97,996 @@
                         android:text="@string/song_length_play_list"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
 
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/dropbox" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/googledrive" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/googledrive" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/sugasync" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/sugasync" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/dropbox" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/onedrive" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/sugasync" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/dropbox" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/onedrive" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/onedrive" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/dropbox" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/dropbox" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/dropbox" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/googledrive" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/googledrive" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/dropbox" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/dropbox" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/dropbox" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/dropbox" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/dropbox" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/dropbox" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_more_vert_white_24dp"
+
+                        />
+
+
+                </LinearLayout>
+                <!--Song line and params -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PlayListFieldSize"
+                    android:orientation="horizontal">
+
+                    <!--Cloud icon-->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/dropbox" />
+                    <!--Author and song name txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="@string/song_name_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--Songs duration txt-->
+                    <TextView
+                        style="@style/PlayListTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/song_length_play_list"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/SongTxtSizeInPlayList" />
+                    <!--3dots menu -->
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -105,819 +1099,12 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/dropbox" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/googledrive" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/onedrive" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/onedrive" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:background="@android:color/holo_blue_dark"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@android:color/holo_blue_dark"
-                        android:text="@string/song_timing_txt"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@android:color/holo_blue_dark"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/dropbox" />
-
-                    <TextView
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/dropbox" />
-
-                    <TextView
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/dropbox" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/sugasync" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/sugasync" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/dropbox" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/googledrive" />
-
-                    <TextView
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/googledrive" />
-
-                    <TextView
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/googledrive" />
-
-                    <TextView
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/googledrive" />
-
-                    <TextView
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/googledrive" />
-
-                    <TextView
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/googledrive" />
-
-                    <TextView
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/googledrive" />
-
-                    <TextView
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.94"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/googledrive" />
-
-                    <TextView
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/googledrive" />
-
-                    <TextView
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/PlayListFieldSize"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/googledrive" />
-
-                    <TextView
-
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="6"
-                        android:text="@string/song_name_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <TextView
-                        style="@style/PlayListTextStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/song_length_play_list"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="@dimen/SongTxtSizeInPlayList" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:padding="6dp"
-                        app:srcCompat="@drawable/ic_more_vert_white_24dp" />
-
-
-                </LinearLayout>
 
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
 
+    <!--Bottom buttons panel-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -925,6 +1112,7 @@
         android:background="@color/colorAccent"
         android:orientation="horizontal">
 
+        <!--Button player-->
         <ImageButton
             android:id="@+id/imageButtonPlayer"
             style="@style/ButtonsTopAndDown"
@@ -932,14 +1120,14 @@
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/ic_play_circle_outline_white_24dp" />
 
-
+        <!--Button play list-->
         <ImageButton
             android:id="@+id/imageButtonPlayList"
             style="@style/ButtonsTopAndDown"
             android:layout_weight="1"
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/ic_playlist_play_white_24dp" />
-
+        <!--Button equalizer-->
         <ImageButton
             android:id="@+id/imageButtonEqualizer"
             style="@style/ButtonsTopAndDown"
@@ -947,7 +1135,7 @@
             android:background="@color/buttonsColor"
             app:srcCompat="@drawable/equalizer3" />
 
-
+        <!--Button rescan-->
         <ImageButton
             android:id="@+id/imageButtonRescan"
             style="@style/ButtonsTopAndDown"
