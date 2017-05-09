@@ -14,6 +14,10 @@
     <string name="ring_tone_selected">"New ringtone selected"</string>
     <string name="shared_song">"Song was shared"</string>
     <string name="rescan_folders">"Clouds and folders rescaned"</string>
+    <string name="description_for_aplayer">You can use controllers of player in this Activity , .</string>
+    <string name="description_for_equalizer">You can choose sound params in this Activity</string>
+    <string name="description_for_playlistActivity">You can work with play list in this Activity.</string>
+    <string name="description_for_cloud_selector">You can select active clouds and folders in this Activity</string>
 
 
 </resources>

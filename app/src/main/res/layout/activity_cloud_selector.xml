@@ -56,7 +56,18 @@
         android:layout_weight="7"
         android:background="@drawable/w6"
         android:orientation="vertical">
+        <!--Description for clouds selector -->
+        <TextView
+            android:id="@+id/descriptionCloudeSelector"
+            style="@style/DescriptionStyle"
+            android:background="@color/backgroundForDescription"
+            android:text="@string/description_for_cloud_selector"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/AuthorName" />
+
         <!--Scrollview for folders area-->
+
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">

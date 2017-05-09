@@ -49,15 +49,26 @@
 
     </LinearLayout>
 
+
+    <!--Description for Play List -->
     <!--Work screen-->
-    <LinearLayout
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="7"
         android:background="@drawable/w6"
         android:orientation="vertical">
         <!--scroll panel-->
-        <ScrollView
+            <TextView
+                android:id="@+id/descriptionPlayList"
+                style="@style/DescriptionStyle"
+                android:layout_width="match_parent"
+                android:background="@color/backgroundForDescription"
+                android:text="@string/description_for_playlistActivity"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/AuthorName" />
+
+            <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
