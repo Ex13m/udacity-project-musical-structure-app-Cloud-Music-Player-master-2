@@ -1,3 +1,11 @@
+
+/**
+ * Created by admin on 09.05.2017.
+ * This a class for work with play list of app
+ * Class contains method who work with animation library -https://github.com/daimajia/AndroidViewAnimations
+ *
+ */
+
 package com.example.android.musiccloudplayer;
 
 import android.content.Intent;
@@ -68,6 +76,8 @@ public class PlayList extends AppCompatActivity implements View.OnClickListener{
 
         }
     }
+
+    //Reaction on backPressed
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(PlayList.this, MainActivity.class);
@@ -102,18 +112,14 @@ public class PlayList extends AppCompatActivity implements View.OnClickListener{
 
 
 
-    //                          animations
+    //                          animations - for example
     //View animation library - https://github.com/daimajia/AndroidViewAnimations
     public void btnAnimations(View view, Techniques techniques, int duration) {
-        //without params
+
         YoYo.with(techniques).duration(duration).playOn(view);
-        //with params
-        //        YoYo.with(Techniques.FadeInUp)
-        //
-        //                .repeat(1)
-        //                .playOn(view);
-        //
+
     }
+    //        Animation of buttons when activity start
     protected void animationOfButtonsWhenActivityStart(Techniques techniques){
         btnAnimations(imageButtonMenu,techniques,400);
         btnAnimations(imageButtonOnRingtone,techniques,500);
@@ -124,6 +130,7 @@ public class PlayList extends AppCompatActivity implements View.OnClickListener{
         btnAnimations(imageButtonEqualizer,techniques,1000);
         btnAnimations(imageButtonRescan,techniques,1100);
     }
+    //        Animation of buttons when activity closed
     protected void animationOfButtonsWhenActivityClosed(Techniques techniques,Techniques techniques1){
         btnAnimations(imageButtonMenu,techniques,400);
         btnAnimations(imageButtonOnRingtone,techniques,500);
@@ -134,7 +141,7 @@ public class PlayList extends AppCompatActivity implements View.OnClickListener{
         btnAnimations(imageButtonEqualizer,techniques1,1000);
         btnAnimations(imageButtonRescan,techniques1,1100);
     }
-//********3******************************************************************************************
+
 
 }
 

@@ -59,8 +59,6 @@
 
 
     <style name="PlayListTextStyle"  parent="android:Widget.ProgressBar.Horizontal">
-        <!--<item name="layout_width">0dp</item>-->
-        <!--<item name="layout_height">match_parent</item>-->
         <item name="android:gravity">center_vertical</item>
         <item name="android:maxLines">1</item>
         <item name="android:padding">4dp</item>

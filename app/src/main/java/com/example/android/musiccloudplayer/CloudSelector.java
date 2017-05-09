@@ -1,3 +1,10 @@
+
+/**
+ * Created by admin on 09.05.2017.
+ * This a class for selecting active cloud and folder
+ * Class contains method who work with animation library -https://github.com/daimajia/AndroidViewAnimations
+ *
+ */
 package com.example.android.musiccloudplayer;
 
 import android.content.Intent;
@@ -104,17 +111,11 @@ public class CloudSelector extends AppCompatActivity implements View.OnClickList
     //                          animations
     //View animation library - https://github.com/daimajia/AndroidViewAnimations
     public void btnAnimations(View view, Techniques techniques, int duration) {
-        //without params
-        YoYo.with(techniques).duration(duration).playOn(view);
-        //with params
-        //        YoYo.with(Techniques.FadeInUp)
-        //
-        //                .repeat(1)
-        //                .playOn(view);
-        //
+       YoYo.with(techniques).duration(duration).playOn(view);
+
     }
 
-
+    //        Animation of buttons when activity start
     protected void animationOfButtonsWhenActivityStart(Techniques techniques) {
         btnAnimations(imageButtonMenu, techniques, 400);
         btnAnimations(imageButtonOnRingtone, techniques, 500);
@@ -125,7 +126,7 @@ public class CloudSelector extends AppCompatActivity implements View.OnClickList
         btnAnimations(imageButtonEqualizer, techniques, 1000);
         btnAnimations(imageButtonRescan, techniques, 1100);
     }
-
+    //        Animation of buttons when activity closed
     protected void animationOfButtonsWhenActivityClosed(Techniques techniques, Techniques techniques1) {
         btnAnimations(imageButtonMenu, techniques, 400);
         btnAnimations(imageButtonOnRingtone, techniques, 500);
@@ -136,7 +137,6 @@ public class CloudSelector extends AppCompatActivity implements View.OnClickList
         btnAnimations(imageButtonEqualizer, techniques1, 1000);
         btnAnimations(imageButtonRescan, techniques1, 1100);
     }
-//**************************************************************************************************
 
 }
 

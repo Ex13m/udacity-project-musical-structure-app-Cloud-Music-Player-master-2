@@ -1,3 +1,10 @@
+
+/**
+ * Created by admin on 09.05.2017.
+ * This a class for work main player page of app
+ * Class contains method who work with animation library -https://github.com/daimajia/AndroidViewAnimations
+ *
+ */
 package com.example.android.musiccloudplayer;
 
 import android.content.Intent;
@@ -10,16 +17,12 @@ import android.widget.Toast;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 
-import static com.daimajia.androidanimations.library.Techniques.DropOut;
-import static com.daimajia.androidanimations.library.Techniques.SlideOutDown;
-import static com.daimajia.androidanimations.library.Techniques.SlideOutUp;
-import static com.daimajia.androidanimations.library.Techniques.StandUp;
-import static com.example.android.musiccloudplayer.R.id.imageButtonRescan;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ImageButton imageButtonMenu, imageButtonOnRingtone, imageButtonShare, imageButtonClouds;
     private ImageButton imageButtonPlayer, imageButtonPlayList, imageButtonEqualizer, imageButtonRescan;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
     }
-
+    //Reaction on backPressed
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(MainActivity.this, MainActivity.class);
@@ -114,15 +117,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //                          animations
     //View animation library - https://github.com/daimajia/AndroidViewAnimations
     public void btnAnimations(View view, Techniques techniques, int duration) {
-        //without params
+
         YoYo.with(techniques).duration(duration).playOn(view);
-        //with params
-        //        YoYo.with(Techniques.FadeInUp)
-        //
-        //                .repeat(1)
-        //                .playOn(view);
-        //
+
     }
+    //        Animation of buttons when activity start
     protected void animationOfButtonsWhenActivityStart(Techniques techniques){
         btnAnimations(imageButtonMenu,techniques,400);
         btnAnimations(imageButtonOnRingtone,techniques,500);
@@ -133,6 +132,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnAnimations(imageButtonEqualizer,techniques,1000);
         btnAnimations(imageButtonRescan,techniques,1100);
         }
+    //        Animation of buttons when activity closed
     protected void animationOfButtonsWhenActivityClosed(Techniques techniques,Techniques techniques1){
         btnAnimations(imageButtonMenu,techniques,400);
         btnAnimations(imageButtonOnRingtone,techniques,500);
@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnAnimations(imageButtonEqualizer,techniques1,1000);
         btnAnimations(imageButtonRescan,techniques1,1100);
     }
-//**************************************************************************************************
+
 
 }
 
