@@ -69,7 +69,7 @@
                 android:id="@+id/descriptionPlayer"
                 style="@style/DescriptionStyle"
                 android:background="@color/backgroundForDescription"
-                android:text="@string/description_for_aplayer"
+                android:text="@string/description_for_player"
                 android:textColor="@android:color/background_light"
                 android:textSize="@dimen/AuthorName" />
             <!--Album picture -->
